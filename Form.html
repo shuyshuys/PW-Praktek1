@@ -9,6 +9,11 @@
       .pad {
         padding-bottom: 5px;
       }
+      input[type="file"] {
+        /* color: transparent; */
+        width: 65px;
+        overflow: hidden;
+      }
     </style>
   </head>
   <body>
@@ -21,8 +26,8 @@
       </div>
       <div class="pad">
         <label for="gender">Gender: </label>
-        <input type="radio" name="gender" id="gender" value="Man" />Men
-        <input type="radio" name="gender" id="gender" value="Women" />Women
+        <input type="radio" name="gender" id="gender" value="Man" /> Man
+        <input type="radio" name="gender" id="gender" value="Women" /> Woman
         <br />
       </div>
       <div class="pad">
@@ -31,7 +36,7 @@
         <br />
       </div>
       <div class="pad">
-        <label for="country">Country</label>
+        <label for="country">Country: </label>
         <select name="country" id="country">
           <option value="Indonesia">Indonesia</option>
           <option value="Malaysia">Malaysia</option>
@@ -48,12 +53,13 @@
       </div>
       <div class="pad">
         <label for="photo">Photo: </label>
-        <input type="file" name="photo" id="photo" />
+        <input type="text" />
+        <input type="file" name="photo" id="photo" title="Select a File." />
         <br />
       </div>
       <div class="pad">
         <label for="comment">Comment</label>
-        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        <textarea name="comment" id="comment" cols="60" rows="5"></textarea>
         <input type="submit" value="Submit" />
       </div>
       <p style="text-align: center">Form Registrasi</p>
